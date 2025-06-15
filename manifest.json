@@ -1,0 +1,9 @@
+{
+  "short_name": "SansSucre",
+  "name": "Sans Sucre Challenge",
+  "icons":[{"src":"https://i.imgur.com/NU7hRuK.png","sizes":"192x192","type":"image/png"},{"src":"https://i.imgur.com/NU7hRuK.png","sizes":"512x512","type":"image/png"}],
+  "start_url":".",
+  "display":"standalone",
+  "background_color":"#fcefee",
+  "theme_color":"#ff6392"
+}
