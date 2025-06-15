@@ -1,0 +1,58 @@
+<header>
+  <h1>🚀 Sans Sucre Challenge</h1>
+  <p>Depuis combien de temps sans sucre ?</p>
+  <div id="chrono"></div>
+  <button onclick="toggleDark()">🌓 Mode sombre</button>
+</header>
+
+<main>
+  <section>
+    <h2>✅ Tâches du jour (<span id="done-count">0</span>/<span id="total-count">0</span>)</h2>
+    <ul id="task-list">
+      <li><input type="checkbox" onclick="onTask(this)" /> Résister au sucre</li>
+      <li><input type="checkbox" onclick="onTask(this)" /> Boire de l’eau</li>
+      <li><input type="checkbox" onclick="onTask(this)" /> Faire du sport</li>
+      <li><input type="checkbox" onclick="onTask(this)" /> Méditer</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>🎉 Succès & Badges</h2>
+    <ul id="success-list"><li>🚀 Challenge prêt !</li></ul>
+  </section>
+
+  <section>
+    <h2>📊 Progression</h2>
+    <progress id="progress-bar" value="0" max="100"></progress>
+  </section>
+
+  <section>
+    <h2>🗓️ Calendrier</h2>
+    <div id="calendar"></div>
+    <button onclick="exportToPDF()">📅 Exporter en PDF</button>
+  </section>
+
+  <section>
+    <h2>🔐 Verrouillage</h2>
+    <input type="password" id="pin-input" placeholder="📥 Crée un PIN" />
+    <button onclick="savePIN()">Sauvegarder PIN</button>
+  </section>
+
+  <section>
+    <h2>🌐 Sauvegarde</h2>
+    <button onclick="exportData()">Exporter données</button>
+    <button onclick="importData()">Importer données</button>
+  </section>
+
+  <section>
+    <h2>🛠️ Paramètres</h2>
+    <label>Date du dernier sucre :</label>
+    <input type="datetime-local" id="start-date" />
+    <button onclick="startTracking()">Lancer chrono</button>
+  </section>
+
+  <footer>
+    <img src="https://cdn.pixabay.com/photo/2016/11/29/03/14/fitness-1869088_960_720.jpg"
+         alt="Motivation sans sucre"
+         class="bottom-image" />
+  </footer>
