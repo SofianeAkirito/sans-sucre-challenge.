@@ -1,45 +1,27 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>Sans Sucre Challenge – Sofiane & Axelle</title>
-  <link rel="manifest" href="manifest.json">
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Sans Sucre Challenge</title>
   <link rel="stylesheet" href="style.css">
   <script defer src="script.js"></script>
 </head>
 <body>
-  <header>
-    <h1>🚀 Sans Sucre Challenge</h1>
-    <p>Depuis combien de temps Sofiane et Axelle résistent ?</p>
-    <div id="chrono"></div>
-    <button onclick="toggleDark()">🌓 Mode sombre</button>
-  </header>
-  <main>
-    <section>
-      <h2>✅ Tâches du jour</h2>
-      <ul id="task-list">
-        <li><label><input type="checkbox" id="task-sophie">‍ Sofiane a résisté</label></li>
-        <li><label><input type="checkbox" id="task-axelle">‍ Axelle a résisté</label></li>
-        <li><label><input type="checkbox" id="cheat">Cheat-meal du jour</label></li>
-      </ul>
-    </section>
-    <section>
-      <h2>🎉 Succès & Badges</h2>
-      <ul id="success-list"><li>🍑 Défi pour Sofiane & Axelle lancé !</li></ul>
-    </section>
-    <section>
-      <h2>📊 Progression</h2>
-      <progress id="progress-bar" value="0" max="100"></progress>
-    </section>
-    <section>
-      <h2>🗓️ Calendrier</h2>
-      <div id="calendar"></div>
-      <button onclick="exportToPDF()">📅 Exporter en PDF</button>
-    </section>
-    <footer>
-      <img src="https://i.imgur.com/NU7hRuK.png" alt="Pêche motivante" class="bottom-image">
-    </footer>
-  </main>
+  <div class="app">
+    <header>
+      <h1>Sans Sucre Challenge</h1>
+      <div id="chrono">...</div>
+    </header>
+    <div class="profiles">
+      <div class="profile active" id="sofiane"><h2>Sofiane</h2></div>
+      <div class="profile" id="axelle"><h2>Axelle</h2></div>
+    </div>
+    <div class="buttons">
+      <button id="check-btn">✅ Résister</button>
+      <button id="cheat-btn">🍔 Cheat Meal</button>
+    </div>
+    <div id="success-toast" class="toast">Succès !</div>
+    <footer>Cheat meal programmé chaque mois</footer>
+  </div>
 </body>
 </html>
